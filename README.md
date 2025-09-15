@@ -53,10 +53,8 @@ Regex & Stream API để parse JSON nhanh
 OpenWeatherMap API để lấy dữ liệu thời tiết
 
 🖼️ Hình ảnh minh họa
-Giao diện chính của Client
-<img width="573" height="415" alt="image" src="https://github.com/user-attachments/assets/3be64552-d811-45a8-a05c-895f3e1537c8" />
 
-Biểu đồ dự báo 5 ngày
+<img width="573" height="415" alt="image" src="https://github.com/user-attachments/assets/3be64552-d811-45a8-a05c-895f3e1537c8" />
 <img width="675" height="387" alt="image" src="https://github.com/user-attachments/assets/b04398a8-f8cd-4dfd-a53b-99e2306676e7" />
 
 (ảnh minh họa, bạn có thể thay bằng screenshot thực tế khi chạy chương trình)
