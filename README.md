@@ -4,7 +4,7 @@
     </a>
 </h2>
 <h2 align="center">
-   TRA CỨU THỜI TIẾT ONLINE
+   ỨNG DỤNG TRA CỨU THỜI TIẾT ONLINE
 </h2>
 <div align="center">
     <p align="center">
