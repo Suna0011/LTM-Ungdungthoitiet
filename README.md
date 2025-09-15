@@ -22,7 +22,7 @@
 Ứng dụng Tra cứu Thời tiết Online
 
 
-## 📌 Giới thiệu
+## 📌1 Giới thiệu
 
 WeatherApp là ứng dụng dự báo thời tiết được xây dựng bằng Java, gồm 2 phần:
 
@@ -38,7 +38,11 @@ Xem lịch sử truy vấn thời tiết.
 
 Ứng dụng phù hợp để học tập lập trình socket, đa luồng, GUI và xử lý API JSON.
 
-## ⚙️ Công nghệ sử dụng
+## 🔧2. Ngôn ngữ lập trình sử dụng: [![Java](https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=java&logoColor=white)](https://www.java.com/)
+- Ngôn ngữ lập trình**: Java  
+- Giao diện**: Java Swing  
+
+## ⚙️3 Công nghệ sử dụng
 
 Java SE 8+
 
@@ -59,7 +63,7 @@ OpenWeatherMap API để lấy dữ liệu thời tiết
 
 (ảnh minh họa, bạn có thể thay bằng screenshot thực tế khi chạy chương trình)
 
-## 🚀 Cài đặt và chạy thử
+## 🚀4 Cài đặt và chạy thử
 1. Yêu cầu
 
 Cài đặt Java JDK 8+
@@ -102,7 +106,7 @@ Chọn "Xem biểu đồ 5 ngày" để hiển thị dự báo nhiệt độ tru
 
 Chọn "Xem lịch sử" để xem các lần truy vấn.
 
-## 📬 Liên Hệ
+## 📬5 Liên Hệ
 
 Sinh viên thực hiện : Hoàng Thế Khải
 
