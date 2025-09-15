@@ -21,83 +21,93 @@
 
 Ứng dụng Tra cứu Thời tiết Online
 
-## 1. 🚀 Giới thiệu
-Ứng dụng **Tra cứu Thời tiết Online** cho phép người dùng xem thông tin thời tiết theo vị trí (thành phố/tỉnh/thị trấn) một cách nhanh chóng và trực quan.  
+🌦️ WeatherApp – UDP Client/Server đa luồng (Java)
+📌 Giới thiệu
 
-Người dùng chỉ cần nhập tên địa điểm, hệ thống sẽ hiển thị:  
-- 🌡️ Nhiệt độ hiện tại  
-- 💧 Độ ẩm, 🌬️ tốc độ gió  
-- 🌦️ Dự báo thời tiết trong ngày  
-- ☀️🌧️ Mô tả trạng thái thời tiết (nắng, mưa, nhiều mây, …)  
+WeatherApp là ứng dụng dự báo thời tiết được xây dựng bằng Java, gồm 2 phần:
 
-Ứng dụng sử dụng dữ liệu từ **OpenWeatherMap API**, toàn bộ việc gọi API được thực hiện ở **Server**. Client gửi yêu cầu qua **TCP Socket** tới Server để lấy kết quả.
+WeatherServerMulti: server UDP đa luồng, tiếp nhận yêu cầu từ client, gọi API OpenWeatherMap và trả về dữ liệu.
 
----
+WeatherClientGUIFull: client có giao diện đồ họa (Swing), cho phép người dùng:
 
-## 2. 🛠️ Công nghệ sử dụng
-- **Ngôn ngữ:** Java  
-  - Client: Java Swing (Desktop UI)  
-  - Server: Java Socket (TCP)  
-- **API:** [OpenWeatherMap API](https://openweathermap.org/api)  
-- **Giao tiếp mạng:** TCP Socket (Client ↔ Server)  
-- **Lưu trữ (tùy chọn):** SQLite/MySQL hoặc file JSON để ghi log lịch sử  
+Xem thời tiết hiện tại (nhiệt độ, trạng thái, icon).
 
----
+Xem dự báo 5 ngày (trung bình nhiệt độ, hiển thị biểu đồ).
 
-## 3. 📷 Hình ảnh minh họa
+Xem lịch sử truy vấn thời tiết.
 
-### 🖥️ Giao diện chính (Client)
-👉 *Thêm ảnh chụp màn hình giao diện chính ở đây*  
+Ứng dụng phù hợp để học tập lập trình socket, đa luồng, GUI và xử lý API JSON.
 
-### 📊 Kết quả tra cứu
-👉 *Thêm ảnh chụp màn hình hiển thị kết quả tra cứu ở đây*  
+⚙️ Công nghệ sử dụng
 
-### ⚙️ Server Console
-👉 *Thêm ảnh chụp màn hình console của Server ở đây*  
+Java SE 8+
 
----
+UDP Socket (DatagramSocket, DatagramPacket)
 
-## 4. 📥 Cài đặt & Chạy thử
+ExecutorService (đa luồng xử lý song song)
 
-### 1️⃣ Đăng ký API Key
-- Truy cập [OpenWeatherMap](https://openweathermap.org/api)  
-- Tạo tài khoản và lấy **API Key** miễn phí  
+Swing (JFrame, JPanel, JTextArea, JButton, JLabel, …) để xây dựng giao diện
 
-### 2️⃣ Cấu hình Project
-Tạo 2 module chính:  
-- **Server** (`WeatherServer.java`):  
-  - Dùng `ServerSocket` để lắng nghe TCP  
-  - Gọi OpenWeatherMap API để lấy dữ liệu thời tiết  
-- **Client** (`WeatherClientGUI.java`):  
-  - Dùng Swing để xây dựng giao diện  
-  - Gửi request TCP đến Server và hiển thị kết quả  
+Regex & Stream API để parse JSON nhanh
 
-### 3️⃣ Chạy chương trình
+OpenWeatherMap API để lấy dữ liệu thời tiết
 
-Biên dịch & chạy **Server** trước:
-```sh
-javac WeatherServer.java
-java weatherapp.server.WeatherServer
-Sau đó biên dịch & chạy Client:
+🖼️ Hình ảnh minh họa
+Giao diện chính của Client
+<img width="573" height="415" alt="image" src="https://github.com/user-attachments/assets/3be64552-d811-45a8-a05c-895f3e1537c8" />
 
-sh
-Sao chép mã
-javac WeatherClientGUI.java
-java weatherapp.client.WeatherClientGUI
-5. 📚 Kiến trúc hệ thống
-Client GUI (Swing):
-Nhập địa điểm → gửi request TCP → nhận dữ liệu thời tiết → hiển thị giao diện
+Biểu đồ dự báo 5 ngày
+<img width="675" height="387" alt="image" src="https://github.com/user-attachments/assets/b04398a8-f8cd-4dfd-a53b-99e2306676e7" />
 
-Server (Socket):
-Nhận request từ Client → gọi OpenWeatherMap API → parse JSON → gửi lại kết quả
+(ảnh minh họa, bạn có thể thay bằng screenshot thực tế khi chạy chương trình)
 
-Giao thức TCP (text-based):
+🚀 Cài đặt và chạy thử
+1. Yêu cầu
 
-Client gửi: CITY: <tên_thành_phố>
+Cài đặt Java JDK 8+
 
-Server trả: temperature, humidity, wind, description
+Có kết nối mạng Internet
 
-6. 👨‍💻 Nhóm thực hiện
-Sinh viên khoa Công nghệ Thông tin – Đại học Đại Nam
+Tài khoản và API key của OpenWeatherMap
 
-Hướng dẫn: AIoT Lab – Faculty of IT, DaiNam University
+2. Clone project
+git clone https://github.com/yourusername/WeatherApp.git
+cd WeatherApp
+
+3. Chạy Server
+
+Biên dịch:
+
+javac -d out src/tt/*.java
+
+
+Chạy server:
+
+java -cp out tt.WeatherServerMulti
+
+
+Mặc định server chạy trên port 9999
+
+4. Chạy Client GUI
+
+Trong terminal khác:
+
+java -cp out tt.WeatherClientGUIFull
+
+5. Sử dụng
+
+Nhập tên thành phố (ví dụ: Hanoi, London, Tokyo).
+
+Chọn "Dự báo hiện tại" để xem thông tin thời tiết hiện tại.
+
+Chọn "Xem biểu đồ 5 ngày" để hiển thị dự báo nhiệt độ trung bình.
+
+Chọn "Xem lịch sử" để xem các lần truy vấn.
+
+📬 Liên Hệ
+
+Tác giả: [Tên bạn]
+
+📧 Email: your.email@example.com
+
+🌐 GitHub: https://github.com/yourusername
