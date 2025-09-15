@@ -104,7 +104,7 @@ Chọn "Xem lịch sử" để xem các lần truy vấn.
 
 📬 Liên Hệ
 
-Tác giả: [Tên bạn]
+Tác giả: Hoàng Thế Khải
 
 📧 Email: your.email@example.com
 
