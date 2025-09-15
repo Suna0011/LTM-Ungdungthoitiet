@@ -21,8 +21,8 @@
 
 Ứng dụng Tra cứu Thời tiết Online
 
-## 🌦️ WeatherApp – UDP Client/Server đa luồng (Java)
-📌 Giới thiệu
+
+## 📌 Giới thiệu
 
 WeatherApp là ứng dụng dự báo thời tiết được xây dựng bằng Java, gồm 2 phần:
 
@@ -38,7 +38,7 @@ Xem lịch sử truy vấn thời tiết.
 
 Ứng dụng phù hợp để học tập lập trình socket, đa luồng, GUI và xử lý API JSON.
 
-##⚙️ Công nghệ sử dụng
+## ⚙️ Công nghệ sử dụng
 
 Java SE 8+
 
@@ -104,7 +104,7 @@ Chọn "Xem lịch sử" để xem các lần truy vấn.
 
 ## 📬 Liên Hệ
 
-Tác giả: Hoàng Thế Khải
+Sinh viên thực hiện : Hoàng Thế Khải
 
 📧 Email: your.email@example.com
 
