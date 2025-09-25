@@ -102,3 +102,10 @@ WeatherApp gồm 2 thành phần chính:
 
 <p><em>⚠ Lưu ý:</em> Server cần có kết nối Internet để gọi API. Client chỉ kết nối được khi server đang chạy trên cùng host hoặc IP đúng.</p>
 
+## 5. Thông tin liên hệ
+
+Tác giả: Hoàng Thế Khải
+
+Email: khaihoang051103.email@example.com
+
+GitHub: https://github.com/YourUsername/WeatherApp
