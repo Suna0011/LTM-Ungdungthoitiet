@@ -26,7 +26,7 @@
 WeatherApp gồm 2 thành phần chính:
 
 1. **WeatherServer**:  
-   - Lắng nghe kết nối TCP trên cổng `50000`.  
+   - Lắng nghe kết nối TCP trên cổng   
    - Nhận tên thành phố từ client.  
    - Lấy dữ liệu thời tiết từ OpenWeatherMap API.  
    - Trả về JSON chứa thông tin thời tiết hiện tại và dự báo.  
@@ -53,13 +53,16 @@ WeatherApp gồm 2 thành phần chính:
 ## 3. Hình ảnh các chức năng
 
 1. **Giao diện chính**  
-![Main UI](./images/main_ui.png)
+<img width="455" height="663" alt="image" src="https://github.com/user-attachments/assets/485e1ac2-fb56-4ced-b662-70d61a5cd810" />
+
 
 2. **Chọn thành phố và xem dự báo**  
-![Forecast UI](./images/forecast_ui.png)
+<img width="457" height="58" alt="image" src="https://github.com/user-attachments/assets/02804504-9830-46f1-adae-7f1ccc2ce342" />
+
 
 3. **Thông tin chi tiết**  
 - Nhiệt độ, độ ẩm, gió, áp suất, trạng thái thời tiết.
+<img width="434" height="427" alt="image" src="https://github.com/user-attachments/assets/2e3e0645-b783-4968-be5b-d7a604bde02e" />
 
 ---
 
@@ -80,7 +83,7 @@ WeatherApp gồm 2 thành phần chính:
   <li>Mở terminal hoặc IDE (Eclipse/IntelliJ).</li>
   <li>Chạy <code>WeatherServer.java</code>.</li>
   <li>Console sẽ hiển thị:
-    <pre><code>🌤 Weather Server đang chạy tại cổng 12345</code></pre>
+    <pre><code>🌤 Weather Server đang chạy tại cổng </code></pre>
   </li>
 </ol>
 
